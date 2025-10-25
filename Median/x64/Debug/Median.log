@@ -1,6 +1,0 @@
-﻿  randomMedian.cpp
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assessment2\randomMedian.cpp(6,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assessment2\randomMedian.cpp(7,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Median.vcxproj -> C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assessment2\x64\Debug\Median.exe
-  'pwsh.exe' is not recognized as an internal or external command,
-  operable program or batch file.
