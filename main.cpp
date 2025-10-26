@@ -3,14 +3,30 @@
 
 TEST(emptySet, ex1) {
 	std::vector<int> input{};
-	int median = ((input.size() + 1) / 2) - 1;
+	int median = 0;
 	int foundMedian = findingMedian(input, median);
 	EXPECT_EQ(foundMedian, median);
 }
 
-TEST(odd5, ex6) {
+TEST(sizeOne, ex2) {
+	std::vector<int> input{1};
+	int median = input.at(((input.size() + 1) / 2) - 1);
+	int foundMedian = findingMedian(input, median);
+	EXPECT_EQ(foundMedian, median);
+}
+
+TEST(evenTwo, ex3) {
+	std::vector<int> input{0, 1, 2, 4};
+	int median = input.at(((input.size() + 1) / 2) - 1);
+	int foundMedian = findingMedian(input, median);
+	std::cout << median << " median\n";
+	EXPECT_EQ(foundMedian, median);
+}
+
+
+TEST(oddFive, ex6) {
 	std::vector<int> input{ 4, 0, 3, 2, 1 };
-	int median = ((input.size() + 1) / 2) - 1;
+	int median = input.at(((input.size() + 1) / 2) - 1);
 	int foundMedian = findingMedian(input, median);
 	EXPECT_EQ(foundMedian, median);
 }
