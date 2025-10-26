@@ -26,7 +26,7 @@ int findingMedian(std::vector<int>& input, int median) {
 int quickSelect(std::vector<int>& input, int median, int lowerBound, int upperBound) {
 	// Always selecting upperbound as the pivot for simplicity sake
 	int pivot = upperBound;
-	// Points to the first element
+	// Points to the first element. Represents the element in the array currently being looked at
 	int j = lowerBound;
 	// Points to the element before the first element
 	// Represents the divider between numbers lower than the pivot and numbers greater than it
@@ -34,15 +34,17 @@ int quickSelect(std::vector<int>& input, int median, int lowerBound, int upperBo
 
 	// Loop through array until pivot has been reached, i.e. all elemnts have been explored up to the upper bound
 	while (j != pivot) {
-		// Compare 
+		// compare if j is smaller than pivot
 		if (input.at(j) < input.at(pivot)) {
+			// increment i to the next element then swap i and j
 			++i;
 			std::swap(input.at(i), input.at(j));
 		}
+		// go to the next element in the array
 		++j;
 	}
+	// at the end increment i to the next element before swapping i with pivot
 	++i;
-
 	std::swap(input.at(i), input.at(pivot));
 
 	//for (int i : input) {
