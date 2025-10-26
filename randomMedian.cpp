@@ -29,36 +29,30 @@ int quickSelect(std::vector<int>& input, int median, int lowerBound, int upperBo
 		++j;
 	}
 	++i;
+
 	std::swap(input.at(i), input.at(pivot));
 
 	for (int i : input) {
 		std::cout << i << "\n";
 	}
 
-	if (input.at(i) == median) {
+	if (median == input.at(i)) {
 		std::cout << " \nhi ";
-		return input.at(median);
+		return input.at(i);
 	}
+
 	else if (median > input.at(i)) {
 		std::cout << "\nlowerBound " << lowerBound << "\n";
 		lowerBound = i + 1;
 		std::cout << "\n new lowerBound " << lowerBound << "\n";
 		quickSelect(input, median, lowerBound, upperBound);
 	}
+
 	else if (median < input.at(i)) {
 		std::cout << "upperBound " << upperBound << "\n";
 		upperBound = i - 1;
 		std::cout << "\n new upperBound " << upperBound << "\n";
 		quickSelect(input, median, lowerBound, upperBound);
 	}
-
-	std::cout << "\n";
-	
-
-
-
-
-
-	return 0;
-
+	return -1;
 }
