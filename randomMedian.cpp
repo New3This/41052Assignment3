@@ -32,9 +32,12 @@ int quickSelect(std::vector<int>& input, int median, int lowerBound, int upperBo
 	// Represents the divider between numbers lower than the pivot and numbers greater than it
 	int i = lowerBound - 1;
 
+
 	// Loop through array until pivot has been reached, i.e. all elemnts have been explored up to the upper bound
 	while (j != pivot) {
 		// compare if j is smaller than pivot
+	//	std::cout << pivot << "\n";
+		//std::cout << " j " << input.at(j) << " pivot " << input.at(pivot) << "\n";
 		if (input.at(j) < input.at(pivot)) {
 			// increment i to the next element then swap i and j
 			++i;
@@ -47,12 +50,11 @@ int quickSelect(std::vector<int>& input, int median, int lowerBound, int upperBo
 	++i;
 	std::swap(input.at(i), input.at(pivot));
 
-	//for (int i : input) {
-		//std::cout << i << "\n";
-	//}
-	
+	std::cout << "median " << median << " i " << i << "\n";
+
+
 	// Median has been found
-	if (median == input.at(i)) {
+	if (median == i) {
 		int answer = input.at(i);
 		return answer;
 	}
@@ -61,7 +63,7 @@ int quickSelect(std::vector<int>& input, int median, int lowerBound, int upperBo
 	// Then that means the median can be found in the subarray containing all numbers > pivot
 	// Discard subarray containing all numbers < pivot by moving the upperbound to i + 1
 	// Recurse
-	else if (median > input.at(i)) {
+	else if (median > i) {
 		lowerBound = i + 1;
 		quickSelect(input, median, lowerBound, upperBound);
 	}
@@ -70,7 +72,7 @@ int quickSelect(std::vector<int>& input, int median, int lowerBound, int upperBo
 	// Then that means the median can be found in the subarray containing all numbers < pivot
 	// Discard subarray containing all numbers > pivot by moving the upperbound to i - 1
 	// Recurse
-	else if (median < input.at(i)) {	
+	else if (median < i) {	
 		upperBound = i - 1;
 		quickSelect(input, median, lowerBound, upperBound);
 	}

@@ -1,4 +1,10 @@
 ﻿  main.cpp
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(38,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(54,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(71,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(88,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(105,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(121,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   median.vcxproj -> C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\x64\Debug\median.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.
