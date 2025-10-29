@@ -4,8 +4,82 @@
 #include <algorithm>
 #include <iostream>
 
-int findingMedian(std::vector<int>& input, int median);
+template <typename T>
+T findingMedian(std::vector<T>& input, int medianIndex) {
+	if (input.size() == 0) {
+		return 0;
+	}
 
-int quickSelect(std::vector<int>& input, int median, int lesser, int greater);
+	if (input.size() == 1) {
+		return input.at(0);
+	}
+
+	// The pivot is the selected number that will be compared against every other number to find its correct spot
+	int pivot = input.size() - 1;
+	// The highest point of the array (index wise) the algorithm will consider
+	// Used to discard uneeded subarrays
+	// Intiialise last element as the lower bound
+	int upperBound = input.size() - 1;
+	// The lowest point of the array (index wise) the algorithm will consider
+	// Initialise first element as the lower bound
+	int lowerBound = 0;
+	int foundMedian = quickSelect<T>(input, medianIndex, lowerBound, upperBound);
+
+	return foundMedian;
+}
+template <typename T>
+T quickSelect(std::vector<T>& input, int medianIndex, int lowerBound, int upperBound) {
+	// Always selecting upperbound as the pivot for simplicity sake
+	int pivot = upperBound;
+	// Points to the first element. Represents the element in the array currently being looked at
+	int j = lowerBound;
+	// Points to the element before the first element
+	// Represents the divider between numbers lower than the pivot and numbers greater than it
+	int i = lowerBound - 1;
+
+
+	// Loop through array until pivot has been reached, i.e. all elemnts have been explored up to the upper bound
+	while (j != pivot) {
+		// compare if j is smaller than pivot
+		if (input.at(j) < input.at(pivot)) {
+			// increment i to the next element then swap i and j
+			++i;
+			std::swap(input.at(i), input.at(j));
+		}
+		// go to the next element in the array
+		++j;
+	}
+	// at the end increment i to the next element before swapping i with pivot
+	++i;
+	std::swap(input.at(i), input.at(pivot));
+
+
+	// Median has been found
+	if (medianIndex == i) {
+		T answer = input.at(i);
+		return answer;
+	}
+
+	// If median is greater than the pivot
+	// Then that means the median can be found in the subarray containing all numbers > pivot
+	// Discard subarray containing all numbers < pivot by moving the upperbound to i + 1
+	// Recurse
+	else if (medianIndex > i) {
+		lowerBound = i + 1;
+		quickSelect<T>(input, medianIndex, lowerBound, upperBound);
+	}
+
+	// If median is less than the pivot
+	// Then that means the median can be found in the subarray containing all numbers < pivot
+	// Discard subarray containing all numbers > pivot by moving the upperbound to i - 1
+	// Recurse
+	else if (medianIndex < i) {
+		upperBound = i - 1;
+		quickSelect<T>(input, medianIndex, lowerBound, upperBound);
+	}
+
+
+
+}
 
 #endif

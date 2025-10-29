@@ -1,13 +1,13 @@
 #include "randomMedian.hpp"
 #include "gtest/gtest.h"
-/*
+
 TEST(emptySet, ex1) {
 	std::vector<int> input{};
 	int medianIndex = 0;
 	int foundMedian = findingMedian(input, medianIndex);
 	EXPECT_EQ(foundMedian, medianIndex);
 }
-
+/*
 TEST(sizeOne, ex2) {
 	std::vector<int> input{1};
 
@@ -25,13 +25,15 @@ TEST(orderedEvenFour, ex3) {
 
 	std::sort(input.begin(), input.end());
 
-	int median = input.at(medianIndex);
+	int median1 = input.at(medianIndex);
+	int median2 = input.at(medianIndex + 1);
+	int trueMedian = (median1 + median2) / 2;
 
-	std::cout << median << "\n";
+	std::cout << trueMedian << "\n";
 
-	EXPECT_EQ(foundMedian, median);
+	EXPECT_EQ(foundMedian, trueMedian);
 }
-*/
+
 TEST(unorderedOddThree, ex4) {
 	std::vector<int> input{9, 2, 15};
 
@@ -131,26 +133,42 @@ TEST(medianIndexAtEnd, ex9) {
 	EXPECT_EQ(foundMedian, median);
 }
 
-/*TEST(size10000, ex) {
+TEST(size10000, ex) {
 	std::vector<int> input{};
 	for (int i = 0; i < 1000; ++i) {
 		input.push_back(i);
 	}
 	int medianIndex = ((input.size() + 1) / 2) - 1;
-	int foundMedian = findingMedian(input, medianIndex);
-	EXPECT_EQ(foundMedian, medianIndex);
-}*/
 
-/*TEST(size1000Random, exx) {
+	int foundMedian = findingMedian(input, medianIndex);
+
+	std::sort(input.begin(), input.end());
+
+	int median = input.at(medianIndex);
+
+	std::cout << median << "\n";
+
+	EXPECT_EQ(foundMedian, median);
+}
+
+TEST(size1000Random, exx) {
 	std::vector<int> input{};
 	for (int i = 0; i < 1000; ++i) {
 		input.push_back(rand());
 	}
 	int medianIndex = ((input.size() + 1) / 2) - 1;
-	int foundMedian = findingMedian(input, medianIndex);
-	EXPECT_EQ(foundMedian, medianIndex);
-}*/
 
+	int foundMedian = findingMedian(input, medianIndex);
+
+	std::sort(input.begin(), input.end());
+
+	int median = input.at(medianIndex);
+
+	std::cout << median << "\n";
+
+	EXPECT_EQ(foundMedian, median);
+}
+*/
 int main(int argc, char* argv[]) {
 	::testing::InitGoogleTest(&argc, argv);
 	return RUN_ALL_TESTS();

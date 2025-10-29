@@ -1,10 +1,21 @@
-﻿  main.cpp
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(38,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(54,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(71,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(88,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(105,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(121,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+﻿cl : command line  warning D9035: option 'V' has been deprecated and will be removed in a future release
+  main.cpp
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(18,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+      C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(18,12):
+      the template instantiation context (the oldest one first) is
+          C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(7,20):
+          see reference to function template instantiation 'T findingMedian<int>(std::vector<int,std::allocator<int>> &,int)' being compiled
+          with
+          [
+              T=int
+          ]
+  
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(22,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(83,1): warning C4715: 'quickSelect<int>': not all control paths return a value
+  randomMedian.cpp
   median.vcxproj -> C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\x64\Debug\median.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.
