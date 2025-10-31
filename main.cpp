@@ -4,14 +4,14 @@
 TEST(emptySet, ex1) {
 	std::vector<int> input{};
 	int medianIndex = 0;
-	int foundMedian = findingMedian<int>(input, medianIndex);
+	double foundMedian = findingMedian<int>(input, medianIndex);
 	EXPECT_EQ(foundMedian, medianIndex);
 }
 
 TEST(sizeOne, ex2) {
 	std::vector<int> input{1};
 
-	int foundMedian = findingMedian<int>(input, 0);
+	double foundMedian = findingMedian<int>(input, 0);
 
 	EXPECT_EQ(foundMedian, 1);
 }
@@ -22,16 +22,12 @@ TEST(orderedEvenFour, ex3) {
 	int medianIndex = ((input.size() + 1) / 2) - 1;
 
 	double foundMedian = findingMedian<double>(input, medianIndex);
-	std::cout << foundMedian << " answer\n";
 
 	std::sort(input.begin(), input.end());
 
 	double median1 = input.at(medianIndex);
 	double median2 = input.at(medianIndex + 1);
 	double trueMedian = (median1 + median2) / 2;
-
-	std::cout << trueMedian << "\n";
-
 
 	EXPECT_EQ(foundMedian, trueMedian);
 }
@@ -153,11 +149,23 @@ TEST(doubleSize3, ex11) {
 	EXPECT_EQ(foundMedian, median);
 }
 
+TEST(allZeros, ex12) {
+	std::vector<double> input{0, 0, 0, 0, 0, 0, 0, 0, 0};
+
+	int medianIndex = ((input.size() + 1) / 2) - 1;
+
+	int foundMedian = findingMedian<double>(input, medianIndex);
+
+	std::sort(input.begin(), input.end());
+
+	int median = input.at(medianIndex);
+
+	EXPECT_EQ(foundMedian, median);
+}
 
 
 
-
-TEST(size10000, ex) {
+TEST(size10000, r1) {
 	std::vector<int> input{};
 	for (int i = 0; i < 1000; ++i) {
 		input.push_back(i);
@@ -173,7 +181,7 @@ TEST(size10000, ex) {
 	EXPECT_EQ(foundMedian, median);
 }
 
-TEST(size1001Random, exx) {
+TEST(size1001Random, r2) {
 	std::vector<int> input{};
 	for (int i = 0; i < 1001; ++i) {
 		input.push_back(rand());
@@ -186,9 +194,25 @@ TEST(size1001Random, exx) {
 
 	int median = input.at(medianIndex);
 
-	std::cout << median << "\n";
-
 	EXPECT_EQ(foundMedian, median);
+}
+
+TEST(size1000RandomEven, r3) {
+	std::vector<double> input{};
+	for (int i = 0; i < 1000; ++i) {
+		input.push_back(rand());
+	}
+	int medianIndex = ((input.size() + 1) / 2) - 1;
+
+	double foundMedian = findingMedian<double>(input, medianIndex);
+
+	std::sort(input.begin(), input.end());
+
+	double median1 = input.at(medianIndex);
+	double median2 = input.at(medianIndex + 1);
+	double trueMedian = (median1 + median2) / 2;
+
+	EXPECT_EQ(foundMedian, trueMedian);
 }
 
 int main(int argc, char* argv[]) {

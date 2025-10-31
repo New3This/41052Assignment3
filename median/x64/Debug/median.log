@@ -1,57 +1,69 @@
 ﻿cl : command line  warning D9035: option 'V' has been deprecated and will be removed in a future release
   main.cpp
 C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(22,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(43,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(57,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(72,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(87,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(102,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(116,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,27): warning C4305: 'initializing': truncation from 'double' to '_Ty'
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,27): warning C4305:         with
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,27): warning C4305:         [
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,27): warning C4305:             _Ty=float
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,27): warning C4305:         ]
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,34): warning C4305: 'initializing': truncation from 'double' to '_Ty'
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,34): warning C4305:         with
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,34): warning C4305:         [
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,34): warning C4305:             _Ty=float
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,34): warning C4305:         ]
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,40): warning C4305: 'initializing': truncation from 'double' to '_Ty'
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,40): warning C4305:         with
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,40): warning C4305:         [
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,40): warning C4305:             _Ty=float
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,40): warning C4305:         ]
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(131,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(133,18): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(133,18): warning C4244:         with
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(133,18): warning C4244:         [
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(133,18): warning C4244:             T=float
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(133,18): warning C4244:         ]
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(137,13): warning C4244: 'initializing': conversion from '_Ty' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(137,13): warning C4244:         with
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(137,13): warning C4244:         [
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(137,13): warning C4244:             _Ty=float
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(137,13): warning C4244:         ]
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(145,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(147,18): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(147,18): warning C4244:         with
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(147,18): warning C4244:         [
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(147,18): warning C4244:             T=double
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(147,18): warning C4244:         ]
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(151,13): warning C4244: 'initializing': conversion from '_Ty' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(151,13): warning C4244:         with
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(151,13): warning C4244:         [
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(151,13): warning C4244:             _Ty=double
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(151,13): warning C4244:         ]
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(165,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(181,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(39,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(53,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(68,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(83,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(98,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(112,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(125,27): warning C4305: 'initializing': truncation from 'double' to '_Ty'
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(125,27): warning C4305:         with
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(125,27): warning C4305:         [
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(125,27): warning C4305:             _Ty=float
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(125,27): warning C4305:         ]
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(125,34): warning C4305: 'initializing': truncation from 'double' to '_Ty'
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(125,34): warning C4305:         with
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(125,34): warning C4305:         [
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(125,34): warning C4305:             _Ty=float
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(125,34): warning C4305:         ]
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(125,40): warning C4305: 'initializing': truncation from 'double' to '_Ty'
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(125,40): warning C4305:         with
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(125,40): warning C4305:         [
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(125,40): warning C4305:             _Ty=float
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(125,40): warning C4305:         ]
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(127,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,18): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,18): warning C4244:         with
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,18): warning C4244:         [
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,18): warning C4244:             T=float
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,18): warning C4244:         ]
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(133,13): warning C4244: 'initializing': conversion from '_Ty' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(133,13): warning C4244:         with
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(133,13): warning C4244:         [
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(133,13): warning C4244:             _Ty=float
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(133,13): warning C4244:         ]
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(141,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(143,18): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(143,18): warning C4244:         with
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(143,18): warning C4244:         [
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(143,18): warning C4244:             T=double
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(143,18): warning C4244:         ]
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(147,13): warning C4244: 'initializing': conversion from '_Ty' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(147,13): warning C4244:         with
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(147,13): warning C4244:         [
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(147,13): warning C4244:             _Ty=double
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(147,13): warning C4244:         ]
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(155,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(157,18): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(157,18): warning C4244:         with
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(157,18): warning C4244:         [
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(157,18): warning C4244:             T=double
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(157,18): warning C4244:         ]
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(161,13): warning C4244: 'initializing': conversion from '_Ty' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(161,13): warning C4244:         with
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(161,13): warning C4244:         [
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(161,13): warning C4244:             _Ty=double
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(161,13): warning C4244:         ]
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(173,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(189,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(205,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(18,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
       C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(18,12):
       the template instantiation context (the oldest one first) is
-          C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(7,20):
-          see reference to function template instantiation 'T findingMedian<int>(std::vector<int,std::allocator<int>> &,int,bool)' being compiled
+          C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(7,23):
+          see reference to function template instantiation 'T findingMedian<int>(std::vector<int,std::allocator<int>>,int,bool)' being compiled
           with
           [
               T=int
@@ -60,16 +72,16 @@ C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment
 C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(22,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(65,51): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(65,51): warning C4244:         with
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(65,51): warning C4244:         [
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(65,51): warning C4244:             T=double
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(65,51): warning C4244:         ]
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(72,51): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(72,51): warning C4244:         with
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(72,51): warning C4244:         [
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(72,51): warning C4244:             T=double
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(72,51): warning C4244:         ]
   (compiling source file 'main.cpp')
-      C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(65,51):
+      C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(72,51):
       the template instantiation context (the oldest one first) is
           C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(24,23):
-          see reference to function template instantiation 'T findingMedian<double>(std::vector<double,std::allocator<double>> &,int,bool)' being compiled
+          see reference to function template instantiation 'T findingMedian<double>(std::vector<double,std::allocator<double>>,int,bool)' being compiled
           with
           [
               T=double
@@ -81,16 +93,16 @@ C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment
               T=double
           ]
   
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(64,30): warning C4244: 'initializing': conversion from 'int' to 'T', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(64,30): warning C4244:         with
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(64,30): warning C4244:         [
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(64,30): warning C4244:             T=float
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(64,30): warning C4244:         ]
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(70,30): warning C4244: 'initializing': conversion from 'int' to 'T', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(70,30): warning C4244:         with
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(70,30): warning C4244:         [
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(70,30): warning C4244:             T=float
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(70,30): warning C4244:         ]
   (compiling source file 'main.cpp')
-      C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(64,30):
+      C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(70,30):
       the template instantiation context (the oldest one first) is
-          C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(133,20):
-          see reference to function template instantiation 'T findingMedian<float>(std::vector<float,std::allocator<float>> &,int,bool)' being compiled
+          C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\main.cpp(129,20):
+          see reference to function template instantiation 'T findingMedian<float>(std::vector<float,std::allocator<float>>,int,bool)' being compiled
           with
           [
               T=float
@@ -102,16 +114,16 @@ C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment
               T=float
           ]
   
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(65,51): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(65,51): warning C4244:         with
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(65,51): warning C4244:         [
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(65,51): warning C4244:             T=float
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(65,51): warning C4244:         ]
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(72,51): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(72,51): warning C4244:         with
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(72,51): warning C4244:         [
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(72,51): warning C4244:             T=float
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(72,51): warning C4244:         ]
   (compiling source file 'main.cpp')
   
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(92,1): warning C4715: 'quickSelect<int>': not all control paths return a value
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(92,1): warning C4715: 'quickSelect<double>': not all control paths return a value
-C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(92,1): warning C4715: 'quickSelect<float>': not all control paths return a value
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(97,1): warning C4715: 'quickSelect<int>': not all control paths return a value
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(97,1): warning C4715: 'quickSelect<double>': not all control paths return a value
+C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\randomMedian.hpp(97,1): warning C4715: 'quickSelect<float>': not all control paths return a value
   median.vcxproj -> C:\Users\Gordon\OneDrive\Documents\Uni\year4\AdvancedAlgo\Assignments\assignment3\x64\Debug\median.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.

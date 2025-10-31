@@ -5,7 +5,7 @@
 #include <iostream>
 
 template <typename T>
-T findingMedian(std::vector<T>& input, int medianIndex, bool isSecondMiddleFound = false) {
+T findingMedian(std::vector<T> input, int medianIndex, bool isSecondMiddleFound = false) {
 	if (input.size() == 0) {
 		return 0;
 	}
@@ -37,36 +37,41 @@ T quickSelect(std::vector<T>& input, int medianIndex, int lowerBound, int upperB
 	int currentNumber = lowerBound;
 	// Points to the element before the first element
 	// Represents the divider between numbers lower than the pivot and numbers greater than it
-	int i = lowerBound - 1;
+	int divider = lowerBound - 1;
 
 
 	// Loop through array until pivot has been reached, i.e. all elemnts have been explored up to the upper bound
 	while (currentNumber != pivot) {
 		// compare if currentNumber is smaller than pivot
 		if (input.at(currentNumber) < input.at(pivot)) {
-			// increment i to the next element then swap i and currentNumber
-			++i;
-			std::swap(input.at(i), input.at(currentNumber));
+			// increment divider to the next element then swap i and currentNumber
+			++divider;
+			std::swap(input.at(divider), input.at(currentNumber));
 		}
 		// go to the next element in the array
 		++currentNumber;
 	}
-	// at the end increment i to the next element before swapping i with pivot
-	++i;
-	std::swap(input.at(i), input.at(pivot));
+	// at the end increment divider to the next element before swapping divider with pivot
+	++divider;
+	std::swap(input.at(divider), input.at(pivot));
 
 
 	// Median has been found
-	if (medianIndex == i) {
-		T median = input.at(i);
+	if (medianIndex == divider) {
+		T median = input.at(divider);
+		// The case for when there is an even number of elements
+		// isSecondMiddleFound is a flag to ensure this statement is only accessed once
 		if (isEvenArraySize(input) && !isSecondMiddleFound) {
 			isSecondMiddleFound = true;
+			// The algorithm always finds the smaller middle number first
+			// Because the formula to find the position of the median of an even set of numbers always results in a non integer
+			// The datatype of medianIndex is an int so the decimal is chopped off and the number rounds down
+			// So position of 2nd middle number is medianIndex + 1
 			T secondMiddleNumberIndex = medianIndex + 1;
+			// Running the algorithim again to find the second median number
 			T secondMiddleNumber = findingMedian<T>(input, secondMiddleNumberIndex, isSecondMiddleFound);
-			std::cout << secondMiddleNumber << " second\n";
 			T sumOfMiddleNumbers = median + secondMiddleNumber;
 			median = sumOfMiddleNumbers / 2;
-			int x = 0;
 		}
 		
 		return median;
@@ -74,19 +79,19 @@ T quickSelect(std::vector<T>& input, int medianIndex, int lowerBound, int upperB
 
 	// If median is greater than the pivot
 	// Then that means the median can be found in the subarray containing all numbers > pivot
-	// Discard subarray containing all numbers < pivot by moving the upperbound to i + 1
+	// Discard subarray containing all numbers < pivot by moving the upperbound to divider + 1
 	// Recurse
-	else if (medianIndex > i) {
-		lowerBound = i + 1;
+	else if (medianIndex > divider) {
+		lowerBound = divider + 1;
 		quickSelect<T>(input, medianIndex, lowerBound, upperBound, isSecondMiddleFound);
 	}
 
 	// If median is less than the pivot
 	// Then that means the median can be found in the subarray containing all numbers < pivot
-	// Discard subarray containing all numbers > pivot by moving the upperbound to i - 1
+	// Discard subarray containing all numbers > pivot by moving the upperbound to divider - 1
 	// Recurse
-	else if (medianIndex < i) {
-		upperBound = i - 1;
+	else if (medianIndex < divider) {
+		upperBound = divider - 1;
 		quickSelect<T>(input, medianIndex, lowerBound, upperBound, isSecondMiddleFound);
 	}
 }
