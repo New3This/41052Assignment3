@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="MedianTest/MedianTest.vcxproj" Id="11dc2f45-ac73-43b9-86c2-30503f3d2f1e" />
+</Solution>
