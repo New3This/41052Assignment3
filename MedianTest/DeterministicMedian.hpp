@@ -5,7 +5,7 @@
 
 
 template <typename T>
-T recurseLocate(std::vector<T>& array, int leftSide, int rightSide, T median, int pivotRank);
+T pivotLocate(std::vector<T>& array, int leftSide, int rightSide, T median, int pivotRank);
 
 template <typename T>
 T partitionArray(std::vector<T>& array, int leftSide, int rightSide, int pivotRank) {
@@ -38,11 +38,11 @@ T partitionArray(std::vector<T>& array, int leftSide, int rightSide, int pivotRa
         medianofMedians = partitionArray(mediansList, 0, mediansList.size() - 1, mediansList.size() / 2);
     }
     // then we recurse further until pivotRank is found
-    return recurseLocate(array, leftSide, rightSide, medianofMedians, pivotRank);
+    return pivotLocate(array, leftSide, rightSide, medianofMedians, pivotRank);
 }
 
 template <typename T>
-T recurseLocate(std::vector<T>& array, int leftSide, int rightSide, T median, int pivotRank) {
+T pivotLocate(std::vector<T>& array, int leftSide, int rightSide, T median, int pivotRank) {
     int i = leftSide;
     int leftRecurse = leftSide;
     int rightRecurse = rightSide;
