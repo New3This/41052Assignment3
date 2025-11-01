@@ -6,6 +6,21 @@ TEST(DeterministicMedian, EmptyArray) {
 	EXPECT_FALSE(DeterministicMedian(array).has_value());
 }
 
+TEST(DeterministicMedianTests, SameMedianValuesEven) {
+	std::vector<double> array = {0, 1, 5, 5, 6, 7};
+	ASSERT_DOUBLE_EQ(DeterministicMedian(array).value(), 5);
+}
+
+TEST(DeterministicMedianTests, SameMedianValuesOdd) {
+	std::vector<double> array = {0, 1, 5, 5, 5, 6, 7};
+	ASSERT_DOUBLE_EQ(DeterministicMedian(array).value(), 5);
+}
+
+TEST(DeterministicMedianTests, MixedSameMedianValues) {
+	std::vector<double> array = {7, 5.5, -1, 5.5, 2, 9};
+	ASSERT_DOUBLE_EQ(DeterministicMedian(array).value(), 5.5);
+}
+
 // Odd Arrayss
 
 TEST(DeterministicMedianTests, SmallPositiveWholeArrayOdd) {
