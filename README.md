@@ -1,4 +1,4 @@
-Inmstructions: Each algorithm is in separate branches. The randomised algorithm is in the branch, Gordon while the deterministic algorithm is in the branch, Dylan. 
+Inmstructions: Each algorithm is in separate branches. The randomised algorithm is in the branch, Gordon while the deterministic algorithm is in the branch, Dylan. As the name of the branches implies, Gordon wrote the randomised algorithm while Dylan wrote the deterministic algorithm.
 
 The project can be opened with visual studio community 2022 via the .sln file. The C++ standard used has to be C++17 or newer in order for gtest to function.
 
