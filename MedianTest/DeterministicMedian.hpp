@@ -5,29 +5,29 @@
 
 
 template <typename T>
-T recurseLocate(std::vector<T>& array, T median, int pivotRank);
+T recurseLocate(std::vector<T>& array, int leftSide, int rightSide, T median, int pivotRank);
 
 template <typename T>
-T partitionArray(std::vector<T>& array, int pivotRank) {
+T partitionArray(std::vector<T>& array, int leftSide, int rightSide, int pivotRank) {
     std::vector<T> mediansList;
     T medianofMedians = 0;
+    int partitionSize = 0;
 
     // split the array into groups of 5
-    for (int i = 0; i < array.size();) {
-        std::vector<T>subArray;
+    for (int i = leftSide; i <= rightSide;) {
+        
         // (for last grouping) adjust subArray size if less than 5 elements left to be grouped
-        if (i == array.size() - (array.size() % 5) && array.size() % 5 != 0) {
-            subArray = std::vector<T>(array.begin() + i, array.begin() + i + array.size() % 5);
-            i += array.size() % 5;
+        if (rightSide - i + 1 < 5) {
+            partitionSize = rightSide - i + 1;
         }
         // otherwise store every 5
         else {
-            subArray = std::vector<T>(array.begin() + i, array.begin() + i + 5);
-            i += 5;
+            partitionSize = 5;
         }
 
-        std::sort(subArray.begin(), subArray.end()); // since each subarray is at most size of 5, its sort cost is O(1) preserving the deterministics guarantee of O(n) altogether
-        mediansList.push_back(subArray[subArray.size() / 2]); // store the median of each subarray into an array - forms median of median array
+        std::sort(array.begin() + i, array.begin() + i + partitionSize); // since each subarray is at most size of 5, its sort cost is O(1) preserving the deterministics guarantee of O(n) altogether
+        mediansList.push_back(array[i + partitionSize / 2]); // store the median of each subarray into an array - forms median of median array
+        i += partitionSize;
     }
 
     if (mediansList.size() <= 5) { // if medianList is less than 5
@@ -35,69 +35,59 @@ T partitionArray(std::vector<T>& array, int pivotRank) {
         medianofMedians = mediansList[mediansList.size() / 2];
     }
     else { // otherwise find median recursively if too expensive for sort
-        medianofMedians = partitionArray(mediansList, mediansList.size() / 2);
+        medianofMedians = partitionArray(mediansList, 0, mediansList.size() - 1, mediansList.size() / 2);
     }
     // then we recurse further until pivotRank is found
-    return recurseLocate(array, medianofMedians, pivotRank);
-
+    return recurseLocate(array, leftSide, rightSide, medianofMedians, pivotRank);
 }
 
 template <typename T>
-T recurseLocate(std::vector<T>& array, T median, int pivotRank) {
-    std::vector<T> leftArray;
-    std::vector<T> rightArray;
-    std::vector<T> middleArray;
-    // split the medians of medians array into three arrays
-    for (T element : array) {
-        if (element < median) {
-            leftArray.push_back(element);
+T recurseLocate(std::vector<T>& array, int leftSide, int rightSide, T median, int pivotRank) {
+    int i = leftSide;
+    int leftRecurse = leftSide;
+    int rightRecurse = rightSide;
+
+    while (i <= rightRecurse) {// "sorts" the values,
+        if (array[i] < median) { // where values less than median
+            std::swap(array[i], array[leftRecurse]); // go to left side of median
+            i++;
+            leftRecurse++;
         }
-        else if (element == median) {
-            middleArray.push_back(element);
+        else if (array[i] > median) { // else if value bigger than median
+            std::swap(array[i], array[rightRecurse]); // go to right side of median
+            rightRecurse--;
         }
-        else {
-            rightArray.push_back(element);
+        else { // else if equals to median
+            i++; // no swap just check next value
         }
     }
 
-
-    if (pivotRank < leftArray.size()) { // recuse into leftArray if the median exists in there
-        if (leftArray.size() <= 5) { // when less than or equal to 5
-            std::sort(leftArray.begin(), leftArray.end()); // sorting is affordable
-            return leftArray[pivotRank]; // we can finally return median
-        }
-        return partitionArray(leftArray, pivotRank); // otherwise, recurse
-
+    if (pivotRank < leftRecurse - leftSide) { // if median rank is in left of median
+        return partitionArray(array, leftSide, leftRecurse - 1, pivotRank); // recurse into left values
     }
-    else if (pivotRank < leftArray.size() + middleArray.size()) { // if its in middleArray
-        return middleArray[0]; // we return any of the values, i.e. first one -- since all values in middleArray are equal (hence no recursion needed to find median)
+    else if (pivotRank < leftSide + rightRecurse + 1) { // if median rank is at median
+        return median; // return median
     }
-    else { // otherwise if on right side
-        int updatedPivotRank = pivotRank - (leftArray.size() + middleArray.size()); // update pivotRank to adapt to new array size
-        // rest same as line 65 (the if condition)
-        if (rightArray.size() <= 5) {
-            std::sort(rightArray.begin(), rightArray.end());
-            return rightArray[updatedPivotRank];
-        }
-        return partitionArray(rightArray, updatedPivotRank);
+    else {
+        return partitionArray(array, rightRecurse + 1, rightSide, pivotRank + leftSide - rightRecurse - 1);
     }
 }
 
 template <typename T>
 std::optional<T> DeterministicMedian(std::vector<T>& array) {
+    int pivotRank = array.size() / 2;
 
     if (array.empty()) { // if nothing in array
         return std::nullopt; // indicate it does not contain a value
     }
-    
-    int pivotRank = array.size() / 2;
+
 
     else if (array.size() % 2 == 1) { // if array is odd
-        return partitionArray(array, pivotRank); // perform recursive partioning to find middle value/median
+        return partitionArray(array, 0, array.size() - 1, pivotRank); // perform recursive partioning to find middle value/median
     }
     else if (array.size() % 2 == 0) { // otherwise its even
-        T firstMedian = partitionArray(array, (pivotRank) - 1); // find first middle value
-        T secondMedian = partitionArray(array, (pivotRank)); // second middle value
+        T firstMedian = partitionArray(array, 0, array.size() - 1, pivotRank - 1); // find first middle value
+        T secondMedian = partitionArray(array, 0, array.size() - 1, pivotRank); // second middle value
         return (firstMedian + secondMedian) / 2.0; // average of both middle values gives overall median
     }
 }
