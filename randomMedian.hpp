@@ -2,14 +2,15 @@
 #define RANDOMMEDIAN_HPP
 #include <vector>
 #include <algorithm>
-#include <iostream>
 
 template <typename T>
 T findingMedian(std::vector<T> input, int medianIndex, bool isSecondMiddleFound = false) {
+	// Return 0 if the input is empty
 	if (input.size() == 0) {
 		return 0;
 	}
 
+	// Return the number if the size is 1
 	if (input.size() == 1) {
 		return input.at(0);
 	}
